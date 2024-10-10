@@ -4,8 +4,9 @@ using UnityEngine.EventSystems;
 
 namespace InventorySystem
 {
-    public class InventoryItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class InventoryItem : MonoBehaviour
     {
+        bool isClicked = false;
         public enum Item //declare the items
         {
             Sword,
@@ -15,7 +16,7 @@ namespace InventorySystem
         }
         public Item itemType;
         public int Amount;
-        public GameObject HoverInformation;
+        public GameObject ItemInformation;
         public TextMeshProUGUI ItemInformationTextMesh;
 
         public string itemInformation;
@@ -30,17 +31,19 @@ namespace InventorySystem
                 case Item.Gold: return ItemAsset.instance.goldSprite;
             }
         }
-
-        public void OnPointerEnter(PointerEventData eventData) //when mouse hover over
+        public void OnClick()
         {
-
-            HoverInformation.SetActive(true);
-            ItemInformationTextMesh.SetText(itemInformation);
-        }
-
-        public void OnPointerExit(PointerEventData eventData)
-        {
-            HoverInformation.SetActive(false);
+            if (isClicked == false)
+            {
+                ItemInformation.SetActive(true);
+                ItemInformationTextMesh.SetText(itemInformation);
+                isClicked = true;
+            }
+            else
+            {
+                ItemInformation.SetActive(false);
+                isClicked = false;
+            }
         }
     }
 }

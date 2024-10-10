@@ -10,7 +10,7 @@ public class materialsDropDown : MonoBehaviour
     void Start()
     {
         // Add options to the dropdown programmatically
-        List<string> newOptions = new List<string> { "Option A", "Option B", "Option C" };
+        List<string> newOptions = new List<string> { "Wood", "Stone", "Metal" };
         dropDown.options.Clear();
         dropDown.AddOptions(newOptions);
     }

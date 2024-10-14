@@ -10,8 +10,8 @@ namespace InventorySystem
         {
             itemList = new List<InventoryItem>();
 
-            AddItem(new InventoryItem { itemType = InventoryItem.Item.Sword, Amount = 1 });
-            AddItem(new InventoryItem { itemType = InventoryItem.Item.HealthPotion, Amount = 1 });
+            AddItem(new InventoryItem { itemType = InventoryItem.Item.AxeHeads, Amount = 1 });
+            AddItem(new InventoryItem { itemType = InventoryItem.Item.Wood, Amount = 1 });
             AddItem(new InventoryItem { itemType = InventoryItem.Item.Gold, Amount = 100 });
             Debug.Log(itemList.Count);
         }

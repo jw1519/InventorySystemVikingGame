@@ -9,8 +9,8 @@ namespace InventorySystem
         bool isClicked = false;
         public enum Item //declare the items
         {
-            Sword,
-            HealthPotion,
+            AxeHeads,
+            Wood,
             Gold,
             QuestItem,
         }
@@ -26,8 +26,8 @@ namespace InventorySystem
             switch (itemType)
             {
                 default:
-                case Item.Sword: return ItemAsset.instance.swordSprite;
-                case Item.HealthPotion: return ItemAsset.instance.healthPotionSprite;
+                case Item.AxeHeads: return ItemAsset.instance.axeSprite;
+                case Item.Wood: return ItemAsset.instance.woodSprite;
                 case Item.Gold: return ItemAsset.instance.goldSprite;
             }
         }

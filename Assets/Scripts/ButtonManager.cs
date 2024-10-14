@@ -7,7 +7,7 @@ public class ButtonManager : MonoBehaviour
     [Header("Inventory System")]
     public GameObject Inventorybutton; // change image of inventory button if open or close
     public GameObject Inventory;
-    [SerializeField] public bool isInventoryOpen = false;
+    [SerializeField] bool isInventoryOpen = false;
 
     public void OpenAndCloseInventory()
     {
@@ -26,7 +26,7 @@ public class ButtonManager : MonoBehaviour
     
     [Header("Menu")]
     public GameObject Menu;
-    [SerializeField] public bool isMenuOpen = false;
+    [SerializeField] bool isMenuOpen = false;
 
     public void OpenAndCloseMenu()
     {
@@ -43,7 +43,7 @@ public class ButtonManager : MonoBehaviour
     }
     [Header("Settings")]
     public GameObject Settings;
-    [SerializeField] public bool isSettingsOpen = false;
+    [SerializeField] bool isSettingsOpen = false;
     public void OpenAndCloseSettings()
     {
         if (!isSettingsOpen)

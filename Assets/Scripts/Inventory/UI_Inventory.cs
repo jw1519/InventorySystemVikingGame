@@ -17,7 +17,7 @@ namespace InventorySystem
         }
         private void Awake()
         {
-            itemSlotContainer = transform.Find("Inventory");
+            itemSlotContainer = transform.Find("ItemContainer");
             itemSlotTemplate = itemSlotContainer.Find("ItemSlot");
         }
         private void RefreshInvetoryItems() // this can be called when a new item is collected

@@ -5,13 +5,13 @@ using UnityEngine;
 public class ButtonManager : MonoBehaviour
 {
     [Header("Inventory System")]
-    public GameObject Inventorybutton;
+    public GameObject Inventorybutton; // change image of inventory button if open or close
     public GameObject Inventory;
-    private bool isInventoryOpen = false;
+    [SerializeField] public bool isInventoryOpen = false;
 
     public void OpenAndCloseInventory()
     {
-        if (isInventoryOpen == false)
+        if (!isInventoryOpen)
         {
             isInventoryOpen = true;
             Inventory.SetActive(true);
@@ -21,5 +21,52 @@ public class ButtonManager : MonoBehaviour
             isInventoryOpen= false;
             Inventory.SetActive(false);
         }
+    }
+
+    
+    [Header("Menu")]
+    public GameObject Menu;
+    [SerializeField] public bool isMenuOpen = false;
+
+    public void OpenAndCloseMenu()
+    {
+        if (!isMenuOpen)
+        {
+            isMenuOpen= true;
+            Menu.SetActive(true);
+        }
+        else
+        {
+            isMenuOpen = false;
+            Menu.SetActive(false);
+        }
+    }
+    [Header("Settings")]
+    public GameObject Settings;
+    [SerializeField] public bool isSettingsOpen = false;
+    public void OpenAndCloseSettings()
+    {
+        if (!isSettingsOpen)
+        {
+            isSettingsOpen = true;
+            Settings.SetActive(true);
+            Menu.SetActive(false);
+        }
+        else
+        {
+            isSettingsOpen = false;
+            Settings.SetActive(false);
+            Menu.SetActive(true);
+        }
+    }
+
+    public void SaveGame()
+    {
+        Debug.Log("Game has been saved");
+    }
+
+    public void QuitGame()
+    {
+        
     }
 }

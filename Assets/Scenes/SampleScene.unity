@@ -363,6 +363,11 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &115800843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4817002775582923306, guid: 3ab6d28c73cca454db2925deb9076304, type: 3}
+  m_PrefabInstance: {fileID: 2732762742124279477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &265277288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3638,8 +3643,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8708806178564174359, guid: 500732c2071dbf74f9ae561291e7380f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8896120377385279227, guid: 500732c2071dbf74f9ae561291e7380f, type: 3}
+      propertyPath: ItemInformation
+      value: 
+      objectReference: {fileID: 115800843}
     - target: {fileID: 8896120377385279227, guid: 500732c2071dbf74f9ae561291e7380f, type: 3}
       propertyPath: itemInformation
       value: hello

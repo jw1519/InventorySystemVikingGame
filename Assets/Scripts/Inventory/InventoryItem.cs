@@ -36,6 +36,7 @@ namespace InventorySystem
             if (isClicked == false)
             {
                 ItemInformation.SetActive(true);
+                ItemInformationTextMesh = ItemInformation.GetComponentInChildren<TextMeshProUGUI>();
                 ItemInformationTextMesh.SetText(itemInformation);
                 isClicked = true;
             }

@@ -8,7 +8,6 @@ namespace InventorySystem
         [HideInInspector] public Transform parentAfterDrag;
         public void OnBeginDrag(PointerEventData eventData)
         {
-            Debug.Log("Begin");
             parentAfterDrag = transform.parent;
             transform.SetParent(transform.root);
             transform.SetAsFirstSibling();

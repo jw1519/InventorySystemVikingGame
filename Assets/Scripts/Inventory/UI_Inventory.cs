@@ -1,4 +1,3 @@
-using InventorySystem;
 using UnityEngine;
 using UnityEngine.UI;
 

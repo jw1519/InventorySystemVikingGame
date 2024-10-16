@@ -19,11 +19,9 @@ namespace InventorySystem
         {
             itemList.Add(item);
         }
-
         public List<InventoryItem> GetItemList()
         {
             return itemList;
         }
-
     }
 }

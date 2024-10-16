@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonManager : MonoBehaviour
@@ -23,7 +21,6 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    
     [Header("Menu")]
     public GameObject Menu;
     [SerializeField] bool isMenuOpen = false;
@@ -41,6 +38,7 @@ public class ButtonManager : MonoBehaviour
             Menu.SetActive(false);
         }
     }
+
     [Header("Settings")]
     public GameObject Settings;
     [SerializeField] bool isSettingsOpen = false;
